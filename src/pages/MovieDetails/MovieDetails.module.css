@@ -1,0 +1,47 @@
+/* src/pages/MovieDetails/MovieDetails.module.css */
+
+.details {
+  /* Espacia el contenido del detalle y separa secciones */
+  background-color: #d12121;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.poster {
+  /* Ajusta el tamaño del poster y bordes */
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 80rem;
+}
+
+.title {
+  /* Título grande y destacado */
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.genre,
+.release,
+.rating {
+  /* Líneas de información secundaria */
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #433b3b;
+}
+
+.synopsis {
+  /* Texto de sinopsis con mejor legibilidad */
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.btn-danger {
+  /* Botón personalizado si se desea override */
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+}

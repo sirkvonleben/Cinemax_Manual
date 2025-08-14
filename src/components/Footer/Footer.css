@@ -1,0 +1,81 @@
+footer {
+  margin-top: 80px;
+  background-color: #0d3b66;
+  color: #fff;
+  padding: 30px 20px;
+  font-family: sans-serif;
+}
+
+.info-enterprice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.info-enterprice-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 200px;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.info-enterprice-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 200px;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.info-enterprice-social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 200px;
+  text-align: center;
+  align-items: center;
+}
+
+.info-enterprice-links a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  align-items: center;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+.libro-reclamaciones {
+  width: 100px;
+  margin-top: 15px;
+}
+
+.info-copyright {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+}

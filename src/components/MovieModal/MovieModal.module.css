@@ -1,0 +1,252 @@
+:root {
+  --bg: #e5f0f7;
+  --card-bg: #ffffff;
+  --text: #1f2d3a;
+  --muted: #6c757d;
+  --radius: 12px;
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  --transition: 0.25s ease;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: auto;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 1160px;
+  background: #d9d9d9;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-sizing: border-box;
+  /* padding: 0px; */
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  font-family: Inter, sans-serif;
+  color: #1f2d3a;
+  /* height: 600px; */
+  max-height: 1000px;
+}
+
+.inner {
+  flex: 1;
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  min-height: 500px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.left {
+  flex: 5 0 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.trailerAndDetails {
+  display: flex;
+  gap: 10px;
+
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.trailer {
+  width: 85%;
+  aspect-ratio: 16/9;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  min-height: 260px;
+}
+
+.details {
+  position: relative;
+  left: -30px;
+  flex: 4 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 10px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.info {
+  margin: 4px 0;
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+.synopsis {
+  margin-top: 1px;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-height: 160px;
+  overflow: auto;
+  margin-bottom: 150px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 12px 20px;
+  background: #7d6c6c;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+  transition: background var(--transition);
+}
+
+.closeBtn:hover {
+  background: #5a636b;
+}
+
+.castBtn:hover {
+  background: #5a636b;
+}
+
+.castBtn {
+  position: absolute;
+  right: -270px;
+  background: #544e4e;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.summaryBar {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  padding: 8px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  z-index: 3;
+}
+
+.summaryBar strong {
+  color: #222;
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  .modal {
+    flex-direction: column;
+    padding: 24px;
+  }
+  .inner {
+    flex-direction: column;
+  }
+  .left,
+  .details {
+    flex: 1 1 auto;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+}
+/* debajo de lo que ya tienes */
+
+.actionsRow {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.primaryBtn {
+  background: #e53946;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  width: 85%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.secondaryBtn {
+  background: #6c757d; /* gris tipo reparto */
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  min-width: 140px;
+  position: absolute;
+  left: 380px;
+  top: 400px;
+}
+
+.trailerWrapper {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  position: relative;
+  padding-top: 16px; /* deja espacio si summaryBar está presente arriba */
+}
+
+.buyWrapper {
+  margin-top: 16px;
+  width: 100%;
+}
