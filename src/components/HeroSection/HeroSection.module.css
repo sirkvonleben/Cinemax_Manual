@@ -1,8 +1,8 @@
 .hero {
   position: relative;
-  background-image: url('../../assets/hero-bg.jpg') center/cover no-repeat;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -27,4 +27,5 @@
 .button {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }

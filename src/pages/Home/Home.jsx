@@ -12,7 +12,7 @@ const fallbackNowShowing = [
   {
     id: 'now-1',
     title: 'Película activa 1',
-    image: 'https://via.placeholder.com/300x170?text=En+Cartelera',
+    image: 'https://m.media-amazon.com/images/I/71GzvpejFRL.jpg',
     trailer: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     duration: '1h 40min',
     format: 'Doblada',
@@ -24,7 +24,7 @@ const fallbackNowShowing = [
   {
     id: 'now-2',
     title: 'Película activa 2',
-    image: 'https://via.placeholder.com/300x170?text=En+Cartelera',
+    image: 'pelicula2.jpg',
     trailer: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     duration: '1h 40min',
     format: 'Doblada',
@@ -36,7 +36,7 @@ const fallbackNowShowing = [
   {
     id: 'now-3',
     title: 'Película activa 3',
-    image: 'https://via.placeholder.com/300x170?text=En+Cartelera',
+    image: 'pelicula3.jpg',
     trailer: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     duration: '1h 40min',
     format: 'Doblada',
